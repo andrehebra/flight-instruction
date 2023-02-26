@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/widgets/side_menu.dart';
 
+import '../controllers/individual_lesson_controller.dart';
+import '../lessons/principles_of_flight/principles_of_flight.dart';
+
 class LargeScreen extends StatelessWidget {
   const LargeScreen({super.key});
 
@@ -8,10 +11,9 @@ class LargeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: SideMenu()),
-        Expanded(
-          flex: 5,
-          child: Container(color: Colors.blue),
+        Container(width: 250, child: SideMenu()),
+        Flexible(
+          child: Lesson(children: contents),
         ),
       ],
     );
