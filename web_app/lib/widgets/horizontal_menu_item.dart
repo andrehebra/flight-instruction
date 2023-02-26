@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
 import '../constants/controllers.dart';
@@ -9,7 +7,7 @@ import 'custom_text.dart';
 
 class HorizontalMenuItem extends StatelessWidget {
   final String itemName;
-  final Function onTap;
+  final VoidCallback onTap;
 
   const HorizontalMenuItem(
       {super.key, required this.itemName, required this.onTap});
