@@ -9,7 +9,10 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 14),
-                  child: Image.asset("assets/logo/airplane.svg"),
+                  child: Image.asset(
+                    "assets/airplane.png",
+                    width: 28,
+                  ),
                 )
               ],
             )
@@ -18,5 +21,5 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               icon: const Icon(Icons.menu),
             ),
       elevation: 0,
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
     );
