@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide MenuAnchor;
 import 'package:get/get.dart';
 
 import '../constants/controllers.dart';
