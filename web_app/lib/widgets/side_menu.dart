@@ -21,7 +21,8 @@ class SideMenu extends StatelessWidget {
           children: [
             CustomListTile(title: "hello world"),
             CustomExpandedListTile(
-                title: "expansion baby", children: ["children", "child2"])
+                title: "expansion baby",
+                children: ["children", "child2", "child3"])
           ],
         ));
   }

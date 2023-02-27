@@ -8,6 +8,10 @@ class SmallScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Lesson(children: contents);
+    return Column(
+      children: [
+        Lesson(children: contents),
+      ],
+    );
   }
 }
