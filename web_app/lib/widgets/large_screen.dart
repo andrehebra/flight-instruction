@@ -12,9 +12,7 @@ class LargeScreen extends StatelessWidget {
     return Row(
       children: [
         Container(width: 250, child: SideMenu()),
-        Flexible(
-          child: Lesson(children: contents),
-        ),
+        Lesson(children: contents),
       ],
     );
   }

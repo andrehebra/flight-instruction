@@ -59,10 +59,10 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
                   ))
             ],
           ),
+          SizedBox(
+            width: 8,
+          ),
           Container(width: 1, height: 22, color: lightGrey),
-          const SizedBox(width: 24),
-          CustomText(text: "Andre Hebra"),
-          SizedBox(width: 16),
           Container(
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(30)),
