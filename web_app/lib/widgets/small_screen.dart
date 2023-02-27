@@ -8,6 +8,6 @@ class SmallScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Lesson(children: contents);
+    return const Lesson(children: contents);
   }
 }
