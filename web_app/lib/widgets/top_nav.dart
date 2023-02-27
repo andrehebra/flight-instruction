@@ -18,7 +18,9 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
               ],
             )
           : IconButton(
-              onPressed: () {},
+              onPressed: () {
+                key.currentState?.openDrawer();
+              },
               icon: const Icon(
                 Icons.menu,
                 color: Colors.black,
